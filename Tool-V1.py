@@ -56,7 +56,7 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[31;1m█████████\n \x1b[31;1m█▄█████▄█         \x1b[0;36m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[31;1m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;33m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[31;1m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;33m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;33m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[37;1mVIP.V4\n \x1b[1;97m█████████         \x1b[0;36m«==========✧==========»\n \x1b[1;97m ██ ██\n \x1b[1;97m╔══════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mAdmin  \x1b[1;91m : \x1b[1;96m Hunters Gaming04   \x1b[1;97m                ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m \x1b[92mhttps://github.com/Mr_Hunters\x1b[ \x1b[1;97m      ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mWA      \x1b[1;91m:  \x1b[1;92\x1b[92m083847277532\x1b[     \x1b[1;97m                    ║   \n \x1b[1;97m╚══════════════════════════════════════════════════╝"             '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mSpecial 1k Subscriber Mr_Hunters \x1b[1;91m[\xe2\x98\x86]' '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mTerimakasih Udah Support Channel Ini \x1b[1;91m[\xe2\x98\x86]' '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mSilahkan Log-in Di  Opera Mini No Checkpoint\x1b[1;91m[\xe2\x98\x86]'
+logo = " \x1b[31;1m█████████\n \x1b[31;1m█▄█████▄█         \x1b[0;36m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[31;1m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;33m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[31;1m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;33m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;33m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[37;1mTool.V1\n \x1b[1;97m█████████         \x1b[0;36m«==========✧==========»\n \x1b[1;97m ██ ██\n \x1b[1;97m╔══════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mPENCIPTA  \x1b[1;91m : \x1b[1;96m Ihsan Nursiamsyah   \x1b[1;97m                ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mWHATSAPP  \x1b[1;91m: \x1b[1;92m \x1b[92m083820004295\x1b[ \x1b[1;97m      ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mYOUTUBE      \x1b[1;91m:  \x1b[1;92\x1b[92mIhsan Nursiamsyah\x1b[     \x1b[1;97m                    ║   \n \x1b[1;97m╚══════════════════════════════════════════════════╝"             '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mJangan Lupa Subscribe Yaa \x1b[1;91m[\xe2\x98\x86]' '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mTerima Kasih Yang Sudah Support \x1b[1;91m[\xe2\x98\x86]' '\n \x1b[1;91m[\xe2\x98\x86] \x1b[37;1mSilahkan Log-in Di  Opera Mini No Checkpoint\x1b[1;91m[\xe2\x98\x86]'
 
 
 def tik():
@@ -318,7 +318,7 @@ def menu_hack():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Mini HACK Facebook (\x1b[1;92mTarget\x1b[1;97m)'
+    print '║-> \x1b[1;37;40m1. Mini Hack Facebook (\x1b[1;92mTarget\x1b[1;97m)'
     print '║-> \x1b[1;37;40m2. Multi Bruteforce Facebook File Id'
     print '║-> \x1b[1;37;40m3. Super Multi Bruteforce Facebook'
     print '║-> \x1b[1;37;40m4. BruteForce Wordlist(\x1b[1;92mTarget\x1b[1;97m)'
