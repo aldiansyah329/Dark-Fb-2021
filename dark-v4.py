@@ -5,7 +5,7 @@ print '\x1b[1;32mSilahkan Login '
 import os, sys
 
 def wa():
-    os.system('xdg-open https://api.whatsapp.com/send?phone=6283847277532&text=Assalamualaikum')
+    os.system('xdg-open https://api.whatsapp.com/send?phone=6283820004295&text=Assalamualaikum')
 
 
 def restart():
@@ -16,7 +16,7 @@ def restart():
 user = raw_input('ID: ')
 import getpass
 sandi = raw_input('Password: ')
-if sandi == 'Special1ksubscribe' and user == 'Mr_Hunters':
+if sandi == 'Cyber2021' and user == 'IhsanWoii':
     print 'Anda Telah Login'
     sys.exit
 else:
