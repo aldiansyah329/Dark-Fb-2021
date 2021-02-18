@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # coding=utf-8
-#jangan di recode ngentot
+#jangan di recode woii
 #recode jomblo seumur hidup
-# (MR.K7C8NG) PEMBUAT
-#SUBSCRIBE CHANNEL mrk7c8ng-ices
-#FOLLOW INSTAGRAM @pranata_pasha
+#Author By ( Ihsan Nursiamsyah )
+#SUBSCRIBE YOUTUBE : Ihsan Nursiamsyah
+#FOLLOW INSTAGRAM : @ihsan_nursiamsyah
 
 #Import module
 import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib
@@ -67,10 +67,10 @@ logo = """\033[1;96m█████████
 \033[1;96m█████████      \033[1;92m«----------✧----------»
 \033[1;96m ██ ██
 \033[1;96m╔══════════════════════════════════════════════╗
-\033[1;96m║\033[1;96m* \033[1;95mAuthor  \033[1;93m: \033[1;95mBrother•MR.K7C8NG \033[1;96m                ║
-\033[1;96m║\033[1;96m* \033[1;96mGitHub  \033[1;93m: \033[1;96m\033[4mhttps://github.com/pashayogi\033[0m \033[1;96m     ║
-\033[1;96m║\033[1;96m*\033[1;93mYOUTUBE  \033[1;93m: \033[1;91m\033mhttps://youtube.com/c/mrk7c8ng\033[0m \033[1;96m   ║
-\033[1;96m║\033[1;97m*\033[1;97mINSTAGRAM\033[1;92m: \033[1;96m\033m@pranata_pasha\033[0m \033[1;96m                   ║
+\033[1;96m║\033[1;96m* \033[1;95mAuthor  \033[1;93m: \033[1;95mIhsan Nursiamsyah\033[1;96m                ║
+\033[1;96m║\033[1;96m* \033[1;96mGitHub  \033[1;93m: \033[1;96m\033[4mhttps://github.com/Ihsan-Nursiamsyah\033[0m \033[1;96m     ║
+\033[1;96m║\033[1;96m*\033[1;93mYOUTUBE  \033[1;93m: \033[1;91m\033mIhsan Nursiamsyah\033[0m \033[1;96m   ║
+\033[1;96m║\033[1;97m*\033[1;97mINSTAGRAM\033[1;92m: \033[1;96m\033m@ihsan_nursiamsyah\033[0m \033[1;96m                   ║
 \033[1;96m╚══════════════════════════════════════════════╝"""
 
 # titik #
