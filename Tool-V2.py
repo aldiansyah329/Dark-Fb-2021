@@ -3,8 +3,8 @@
 #jangan di recode woii
 #recode jomblo seumur hidup
 #Author By ( Ihsan Nursiamsyah )
-#SUBSCRIBE YOUTUBE : Ihsan Nursiamsyah
-#FOLLOW INSTAGRAM : @ihsan_nursiamsyah
+#SUBSCRIBE YOUTUBE : Ihsan Woii
+#FOLLOW INSTAGRAM : @ihsan_woii
 
 #Import module
 import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib
@@ -69,8 +69,8 @@ logo = """\033[1;96m█████████
 \033[1;96m╔══════════════════════════════════════════════╗
 \033[1;96m║\033[1;96m* \033[1;95mPENCIPTA  \033[1;93m: \033[1;95mIhsan Nursiamsyah\033[0m \033[1;96m
 \033[1;96m║\033[1;96m* \033[1;96mWHATSAPP  \033[1;93m: \033[1;96m\033[4m083820004295\033[0m \033[1;96m
-\033[1;96m║\033[1;96m* \033[1;93mYOUTUBE   \033[1;93m: \033[1;91m\033mIhsan Nursiamsyah\033[0m \033[1;96m
-\033[1;96m║\033[1;97m* \033[1;97mINSTAGRAM \033[1;92m: \033[1;96m\033m@ihsan_nursiamsyah\033[0m \033[1;96m
+\033[1;96m║\033[1;96m* \033[1;93mYOUTUBE   \033[1;93m: \033[1;91m\033mIhsan Woii\033[0m \033[1;96m
+\033[1;96m║\033[1;97m* \033[1;97mINSTAGRAM \033[1;92m: \033[1;96m\033m@ihsan_woii\033[0m \033[1;96m
 \033[1;96m╚══════════════════════════════════════════════╝"""
 
 # titik #
